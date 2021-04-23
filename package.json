@@ -1,5 +1,8 @@
 {
   "name": "heycart",
+  "engines": {
+    "node": "14.16.1"
+  },  
   "version": "1.0.0",
   "description": "heyCart ecommerce mern website",
   "main": "server.js",
