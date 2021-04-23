@@ -20,6 +20,7 @@ app.use(mongoSanitize());
 app.use(helmet());
 // app.use(cors());
 
+app.set('port', (process.env.PORT || 5000));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ extended: true }));
 app.use(cookieParser());

@@ -3,7 +3,7 @@ const dbConnect = require('./DatabaseConfig/mongoose');
 
 
 dbConnect.then(response=>{
-    app.listen(process.env['PORT'],'localhost', (err)=> {
+    app.listen(app.get('port'), (err)=> {
         if(!err) {
             console.log('Application is running. \nDatabase Connection established');
         }
