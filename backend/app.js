@@ -22,7 +22,7 @@ app.use(helmet());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ extended: true }));
-app.use(cookieParser());
+//app.use(cookieParser());
 
 app.use(validateAuthentication);
 
