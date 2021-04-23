@@ -13,7 +13,7 @@ const cors = require('cors');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const app = express();
-const cookieParser = require('cookie-Parser');
+//const cookieParser = require('cookie-Parser');
 
 app.use(xss());
 app.use(mongoSanitize());
