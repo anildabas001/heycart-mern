@@ -17,7 +17,9 @@ const cookieParser = require('cookie-parser');
 
 app.use(xss());
 app.use(mongoSanitize());
-app.use(helmet());
+app.use(helmet({
+    contentSecurityPolicy: false,
+}));
 // app.use(cors());
 
 app.set('port', (process.env.PORT || 5000));

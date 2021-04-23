@@ -130,7 +130,8 @@
 
 @media only screen and (max-width: 678px) {
     .ProductCard {
-        width: 230px;
+        width: 95%;
         margin: 8px auto;
+        border: none;
     }
 }

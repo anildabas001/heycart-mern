@@ -40,3 +40,12 @@
     }
     
 }
+
+@media only screen and (max-width: 570px) {
+	.CategoryCard { 
+        width: 95.2%;
+        margin: 0.7%;
+        margin-bottom: 20px;
+    }
+    
+}

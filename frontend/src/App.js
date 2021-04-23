@@ -58,10 +58,16 @@ function App(props) {
     })        
   }, [])
 
+  const [redirectLink, setRedirectLink] = useState('/');
+
+  useEffect(() => {
+      setRedirectLink(encodeURIComponent(window.location.pathname + window.location.search));
+  }, [window.location.pathname, window.location.search]);
+
  
   return (
     <>
-      <Toolbar crossHamBurger={sidebarState.showSideBar} sideBarHandler={sideBarHandler}/>
+      <Toolbar redirectLink={redirectLink} crossHamBurger={sidebarState.showSideBar} sideBarHandler={sideBarHandler}/>
       <div>
         <ResponsiveSearchbar navigationData={
           {
@@ -69,7 +75,7 @@ function App(props) {
           } 
         } />
       </div>      
-      <SideBar sideBarVisible={sidebarState.showSideBar} sideBarHandler={sideBarHandler} />
+      <SideBar redirectLink={redirectLink} sideBarVisible={sidebarState.showSideBar} sideBarHandler={sideBarHandler} />
       <BackScreen backScreenHandler = {sideBarHandler} showBackScreen={sidebarState.showSideBar}/>
       { props.globalError ? <ErrorPage /> :
         <Switch>  

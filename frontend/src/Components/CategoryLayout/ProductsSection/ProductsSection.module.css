@@ -11,10 +11,10 @@
 }
 
 .ProductHeading {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     border-bottom: 1px solid #eee;
     font-weight: 400;
-    padding-bottom: 5px;
+    padding: 8px;
     margin-bottom: 10px;
 }
 

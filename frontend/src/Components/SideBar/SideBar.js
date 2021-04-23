@@ -24,7 +24,7 @@ const SideBar = (props) => {
                 </div>  
                 <p style={{textAlign: 'center', fontWeight: 'bold', fontSize: '1.4rem', padding: '5px', height: '40px', backgroundColor: '#8a92a3', color: '#fff'}}>Welcome</p>              
                 <nav>
-                    <SideBarLogin />
+                    <SideBarLogin redirectLink={props.redirectLink} />
                     <SideBarCategorySection />
                 </nav>            
             </div>

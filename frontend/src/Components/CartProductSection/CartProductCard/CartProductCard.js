@@ -28,7 +28,7 @@ const CartProductCard = (props) => {
         <div className={classes.CartProductCard}>
         
             <div className={classes.CardImage}>
-                <img src={`http://127.0.0.1:3001/images/${props.cartProduct.product.images[0]}`} alt={`${props.cartProduct.product.images[0]} image`} />
+                <img src={`/images/${props.cartProduct.product.images[0]}`} alt={`${props.cartProduct.product.images[0]} image`} />
             </div>
             <div className={classes.CardInfo}>
                 <p className={classes.ProductName}>{filterName(props.cartProduct.product.name)}</p>

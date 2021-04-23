@@ -5,18 +5,13 @@ import NavLink from "../../NavigationItems/NavigationItem/NavLink/NavLink";
 import {connect} from 'react-redux';
 
 const SideBarLogin = (props) => {
-    const [redirectLink, setRedirectLink] = useState('/');
-
-    useEffect(() => {
-        setRedirectLink(encodeURIComponent(window.location.pathname + window.location.search));
-    }, [window.location.pathname, window.location.search]);
 
     const userIcon = <IoPersonOutline />;
     let logoutElement = null;
     let loginElement = <NavLink navigationData={
         {
             name: 'Login',
-            linkTo: '/login'+ `?redirectTo=${redirectLink}`                
+            linkTo: '/login'+ `?redirectTo=${props.redirectLink}`                
         }
     } />
 
@@ -26,7 +21,7 @@ const SideBarLogin = (props) => {
         <NavLink navigationData={
             {
                 name: 'Log out',
-                linkTo: '/logout' + `?redirectTo=${redirectLink}`          
+                linkTo: '/logout' + `?redirectTo=${props.redirectLink}`          
             }       
         } />
     }

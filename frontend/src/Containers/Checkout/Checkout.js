@@ -2,16 +2,18 @@ import React, {useEffect} from 'react';
 import CheckoutContainer from '../../Components/UI/CheckoutContainer/CheckoutContainer';
 import ShippingAddress from '../../Components/ShippingAddress/ShippingAddress';
 import OrderSummary from '../../Components/OrderSummary/OrderSummary';
-import {Route, Redirect} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import {connect} from 'react-redux';
 import PageNotFound from '../../Components/PageNotFound/PageNotFound';
 
 const Checkout = (props) => {
     document.title = 'Checkout';
     let checkoutElement = <CheckoutContainer>
-        <Route path='/checkout/shippingaddress' exact component={ShippingAddress}/>
-        <Route path='/checkout/ordersummary' exact component={OrderSummary}/>
-        {/* <Route path='/checkout/*' exact component={PageNotFound}/> */}
+    <Switch >
+     <Route path='/checkout/shippingaddress' exact component={ShippingAddress}/>
+     <Route path='/checkout/ordersummary' exact component={OrderSummary}/>
+     <Route path='/checkout/*' exact component={PageNotFound} />
+    </Switch>        
     </CheckoutContainer>;
 
     useEffect(() => {   

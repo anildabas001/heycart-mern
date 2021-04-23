@@ -7,16 +7,11 @@ import NavSearchbar from './NavigationItem/NavSearchbar/NavSearchbar';
 import NavLink from './NavigationItem/NavLink/NavLink';
 
 const Navigation = (props) => {  
-    const [redirectLink, setRedirectLink] = useState('/');
-
-    useEffect(() => {
-        setRedirectLink(encodeURIComponent(window.location.pathname + window.location.search));
-    }, [window.location.pathname, window.location.search]);
-
+    
     let loginLink = <NavLink navigationData={
         {
             name: 'Login',
-            linkTo: '/login'+ `?redirectTo=${redirectLink}`                
+            linkTo: '/login'+ `?redirectTo=${props.redirectLink}`                
         }
     } /> ;
 
@@ -38,7 +33,7 @@ const Navigation = (props) => {
                  },
                  {
                      linkName: 'Logout',
-                     linkTo: `/logout?redirectTo=${redirectLink}`
+                     linkTo: `/logout?redirectTo=${props.redirectLink}`
                  }
              ]
             } 

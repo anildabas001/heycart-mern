@@ -39,6 +39,7 @@
 
     .SectionHeading::after {
         width: 30%;
+        margin-top: 6px;
     }
 }
 
@@ -49,5 +50,6 @@
 
     .SectionHeading::after {
         width: 30%;
+        margin-top: 3px;
     }
 }
