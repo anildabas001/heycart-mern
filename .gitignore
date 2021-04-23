@@ -1,5 +1,6 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies 
+# dependencies
 /node_modules
 /.pnp
 .pnp.js
@@ -9,13 +10,11 @@
 
 # production
 /frontend/build
-/frontend/.env
 /frontend/node_modules
-
+/frontend/.env
+/backend/config.env
 
 # misc
-.env
-/backend/config.env
 .DS_Store
 .env.local
 .env.development.local
