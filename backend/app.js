@@ -1,7 +1,7 @@
 const express =  require('express');
 const path = require('path');
 const cookieParser = require('cookie-Parser');
-process.env['NODE_ENVIRONMENT'] === 'DEVELOPMENT' ? require('dotenv').config({path: `${__dirname}/config.env`}): null;
+require('dotenv').config({path: `${__dirname}/config.env`});
 const productRouter  = require('./Routes/ProductRouter');
 const categoryRouter  = require('./Routes/CategoryRouter');
 const userRouter  = require('./Routes/UserRouter');
