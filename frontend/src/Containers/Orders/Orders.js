@@ -3,7 +3,7 @@ import OrdersContainer from '../../Components/UI/OrdersContainer/OrdersContainer
 import OrderList from '../../Components/OrderList/OrderList';
 import Loader from '../../Components/UI/Loader/Loader';
 import {connect} from 'react-redux';
-import { PromiseProvider } from 'mongoose';
+import { Redirect } from 'react-router-dom';
 
 const Order = (props) => {
     DocumentFragment.title= 'My Orders';
@@ -28,21 +28,27 @@ const Order = (props) => {
                 updateOrders(response.data);                
                 updateShowLoader(false);
             }
-            else {
-                props.setError();
-            }
+            // else {
+            //     props.setError();
+            // }
             updateShowLoader(false);
         })
         .catch((err) => props.setError())
     }, []);
 
+    let element = showLoader ? <Loader/> : 
+    <OrdersContainer>
+        <OrderList orders={orders}/>
+    </OrdersContainer>   
+
+    if(!props.isLoggedin) {
+        element = <Redirect to={`/login?redirectTo=/myprofile`} />
+    }
+
     return (
         <>
         {
-            showLoader ? <Loader/> : 
-             <OrdersContainer>
-                 <OrderList orders={orders}/>
-             </OrdersContainer>
+            element
         }
         </>  
     );
@@ -52,6 +58,12 @@ const mapDispatchToProps = (dispatch) => {
     return {
       setError: () => dispatch({type: 'SET_GLOBAL_ERROR'})
     }
-  }
+}
 
-export default connect(null, mapDispatchToProps)(Order);
+const mapStateToProps = (state) => {
+    return {
+      isLoggedin: state.authentication.isLoggedin
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Order);
