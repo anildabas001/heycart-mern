@@ -13,7 +13,7 @@ const cors = require('cors');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const app = express();
-//const cookieParser = require('cookie-Parser');
+const cookieParser = require('cookie-parser');
 
 app.use(xss());
 app.use(mongoSanitize());
@@ -22,7 +22,7 @@ app.use(helmet());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ extended: true }));
-//app.use(cookieParser());
+app.use(cookieParser());
 
 app.use(validateAuthentication);
 
