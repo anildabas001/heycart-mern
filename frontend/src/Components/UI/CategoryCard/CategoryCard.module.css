@@ -45,6 +45,7 @@
 	.CategoryCard { 
         width: 95.2%;
         margin: 0.7%;
+        max-width: 340px;
         margin-bottom: 20px;
     }
     
