@@ -16,7 +16,7 @@ const Toolbar = (props) => {
                     <Link to="/"><Icon source ={heyCartLogo} description='HeyCart logo'/></Link>
                 </div>            
                 <nav>
-                    <NavigationItems />                                
+                    <NavigationItems redirectLink={props.redirectLink}/>                                
                 </nav>   
                 <span className={classes.smallScreenNav}>
                     <NavLink navigationData={

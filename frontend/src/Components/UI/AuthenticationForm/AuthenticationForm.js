@@ -19,7 +19,7 @@ const AuthenticationForm = (props) => {
             <form onSubmit={props.formSubmitHandler}>                
                 {props.children}
                 <ErrorField style={{textAlign: 'center'}}>{props.formErrorMessage}</ErrorField>
-                <Button>{props.AuthFormType}</Button>
+                <div style={{margin: '0 auto', width: '30%'}}><Button>{props.AuthFormType}</Button></div>
             </form>
             {/* {props.AuthFormType.toLowerCase() === 'login' ? <p className={classes.AuthLink}><Link to='/'>{'Forgot Password?'}</Link></p> : null} */}
             <p className={classes.AuthLink}>{props.AuthFormType.toLowerCase() === 'login' ? <Link to={`/signup?redirectTo=${redirectAddress}`}>{'New to HeyCart? Create an account'}</Link> : <Link to={`/login?redirectTo=${redirectAddress}`}>{'Already having HeyCart Account? Please Login'}</Link> }</p>
