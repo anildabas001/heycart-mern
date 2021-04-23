@@ -1,0 +1,28 @@
+.FilterSection {
+    border-radius: 4px;
+    padding: 13px 0 12px;
+    background-color: #fff;    
+    width: 18%;
+    min-width: 226px;
+    margin-right: 1%;
+    box-shadow: 0 1px 3px -1px rgb(0 0 0 / 40%);    
+    padding: 15px;
+    min-height: 580px;   
+}
+
+ p.FilterHeading {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 540px) {
+    .FilterSection {
+        width: 100%;
+        margin-top: 5px;
+        min-height: 30px;
+    }   
+
+    p.FilterHeading {
+        font-size: 1.3rem;
+    }
+}

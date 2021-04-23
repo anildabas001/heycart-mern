@@ -1,0 +1,34 @@
+.NavLink {
+    display: inline-block;
+    text-decoration: none;
+    color: #222;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.NavLink:hover {
+    color: #0f7c90;
+    font-weight: 400;
+}
+
+.AlignIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.IconLeft {
+    padding-left : 3px;
+}
+
+.IconRight {
+    padding-right : 3px;
+}
+
+@media only screen and (max-width: 900px){
+    .NavLink {
+        padding: 5px;
+    }
+}

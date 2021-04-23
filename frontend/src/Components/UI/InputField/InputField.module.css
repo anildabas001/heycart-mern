@@ -1,0 +1,60 @@
+.InputFieldContainer {
+    margin-bottom: 12px;
+}
+
+.FieldRow {
+    padding: 6px;
+}
+
+.FieldRow label {    
+    vertical-align: x;
+    display: inline-block;
+    width: 30%;
+    padding-right: 1%;
+    text-align: left;
+}
+
+.FieldRow input {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #eee;
+    padding: 3px 7px;
+    height: 25px;
+    border: 1px solid #a6a6a6;
+    border-top-color: #949494;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+    outline: none;
+} 
+
+.InputDiv {    
+    display: inline-block;    
+    width: 60%;
+}
+
+.InputInValid:focus {
+    border-color: rgba(193,39,45,9.5);
+    box-shadow: 0 0 3px 2px rgb(193 39 45);
+}
+
+.InputValid:focus {
+    border-color: #3CB371;
+    box-shadow: 0 0 3px 2px #3CB371;
+}
+@media only screen and (max-width: 550px) {
+    .FieldRow label {
+        display: block;
+        padding-bottom: 5px;
+        width: 100%;
+    }    
+
+    .InputDiv {
+        display: block;
+        width: 100%;
+    }   
+
+    .FieldRow {
+        padding: 3px;
+    }
+}

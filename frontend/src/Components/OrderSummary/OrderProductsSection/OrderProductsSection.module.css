@@ -1,0 +1,127 @@
+.OrderProductsSection {
+  display: block;
+  width: 60%;
+  min-height: 70vh;
+  float: left;
+  margin-right: 2%;
+}
+
+.ShippingAddress,
+.ItemsSection {    
+  width: 100%;
+  padding: 20px 0 12px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px -1px rgb(0 0 0 / 40%);
+  padding: 10px;
+}
+
+.ItemsSection {
+  margin-top: 10px;
+  min-height: 150px;
+}
+
+.Keys {
+  font-weight: 400;
+}
+
+.Values {
+  margin-bottom: 10px;
+}
+
+.ItemsSection h2, 
+.ShippingAddress h2 {
+  font-size: 1.4rem;
+  border-bottom: 1px solid #eee;
+  font-weight: 400;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.Error {
+  color: #c1272d;
+}
+
+.responsive-table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.responsive-table thead {
+  visibility: hidden;    
+  display: none;
+  background: #fafafa;
+}
+@media screen and (min-width: 600px) {
+  .responsive-table thead {
+    visibility: visible;
+    display:contents;
+  }
+}
+.responsive-table tr {
+  border: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  .responsive-table tr {
+    display: table-row;
+    border-bottom-width: 1px;
+    margin-bottom: 0;
+  }
+  .responsive-table tr:nth-child(even) {
+    background: #fafafa;
+  }
+}
+.responsive-table th,
+.responsive-table td {
+  padding: 10px;
+  text-align: left;
+}
+.responsive-table th {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.responsive-table td {
+  display: block;
+  text-align: right;
+  font-size: 13px;
+  border-bottom: 1px dotted #ddd;
+}
+.responsive-table td:last-child {
+  border-bottom: none;
+}
+@media screen and (min-width: 600px) {
+  .responsive-table td {
+    display: table-cell;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: none;
+  }
+}
+.responsive-table td:before {
+  content: attr(data-label);
+  float: left;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media screen and (min-width: 600px) {
+  .responsive-table td:before {
+    content: "";
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 830px) {
+  .OrderProductsSection {
+      width: 100%;
+      display: inline-block; 
+      float: none;
+      min-height: 0vh;
+      margin-bottom: 10px;   
+  }
+}

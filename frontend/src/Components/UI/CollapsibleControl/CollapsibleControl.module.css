@@ -1,0 +1,19 @@
+.CollapseTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    cursor: pointer;
+}
+
+.CollapsibleIcon {
+    font-size: 1.1rem;
+}
+
+.close {
+    display: none;
+}
+
+.open{
+    display: block;
+}

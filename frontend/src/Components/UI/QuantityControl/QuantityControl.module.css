@@ -1,0 +1,34 @@
+.QuantityControl {
+    margin: 0 auto;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:32px;    
+    text-align: center;
+}
+
+.QuantityControl span {
+    vertical-align: middle;
+    outline: none;
+    width: 50%;
+    border: transparent;
+    text-align: center;    
+    height: 32px;    
+    border: 1px solid #0f7c90;
+    border-left: 1px solid #0f7c90;
+    border-right: 1px solid #0f7c90;
+    padding: 8px;
+}
+
+.QuantityControl svg {
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0f7c90;
+}
+
+.QuantityControl svg:hover {
+    box-shadow: 0 2px 8px rgb(20 23 28 / 25%);
+}

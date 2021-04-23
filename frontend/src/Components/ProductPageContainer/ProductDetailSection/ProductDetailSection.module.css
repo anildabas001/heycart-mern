@@ -1,0 +1,123 @@
+.ProductDetailSection {
+    position: relative;
+    top: 0;
+    margin-left: 2px;
+    width: 68%;
+    padding-left: 70px;
+    float: right;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.ProductDetailSection h1 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+    
+}
+
+.CrossText {
+    text-decoration: line-through;
+}
+
+.PriceDetails p {
+    display: inline-block;
+}
+
+.MrpText {
+    margin-right: 20px;
+}
+
+.DiscountClass {
+    color: #c1272d;
+    font-weight: 500;
+}
+
+.PropductButton {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: block;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    padding: .8rem 2rem;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #0f7c90;
+    transition: all 250ms ease;
+    width: 300px;
+    height: 42px;
+}
+
+.PropductButton:hover {
+    box-shadow: 0 2px 8px rgb(20 23 28 / 25%);
+}
+
+.GeneralInfoSection {
+    margin-top: 50px;   
+}
+
+.GeneralInfoHeading{
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 500;      
+}
+
+.GeneralInfoSection ul li{
+    list-style: none;
+    padding: 5px;text-transform: capitalize;
+}
+
+.InfoValues {
+    display: inline-block;
+    width: 35%;
+    text-align:justify;
+}
+
+.stockOut {
+    width: 40%;
+    font-weight: 400;
+    color: #c1272d;
+    border: 1px solid #c1272d;
+    padding: 8px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 650px) { 
+    .ProductDetailSection {
+        width: 100%;
+        padding-left: 0px;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .ButtonAdjust {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ProductDetailSection h1 {
+        display: none;        
+    }
+
+    .GeneralInfoSection ul{
+        display: inline-block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .GeneralInfoSection ul li span{
+       text-align: justify;
+    }
+
+    .InfoValues {
+        display: inline-block;
+        width: 20%;
+        text-align:justify;
+    }
+    
+}

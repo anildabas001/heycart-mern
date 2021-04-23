@@ -1,0 +1,12 @@
+.ProductDescription {
+    width: 80%;
+    margin: 20px auto;
+    border-bottom: 1px solid #eee;
+    text-align: justify;
+}
+
+.Clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

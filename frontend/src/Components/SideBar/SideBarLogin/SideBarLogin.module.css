@@ -1,0 +1,23 @@
+.SideBarLogin {
+    padding: 10px;
+    border-bottom: 1px solid #dcdacb;
+}
+
+.UserIcon {
+    font-size: 5.5rem;
+    color: #555;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+    height: 96px;
+}
+
+.UserIcon svg {
+    border: 1px solid #555;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.SideBarNavList li{
+    list-style: none;
+}

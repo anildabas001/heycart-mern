@@ -1,0 +1,59 @@
+.searchForm {
+    width: 50%;
+    height: 80%;
+}
+
+.searchForm input {
+    display: inline-block;
+    outline: none;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    height: 35px;
+    margin: auto 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: transparent;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #222;
+}
+
+.searchForm svg {  
+    color: #c1272d;    
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-left: transparent;
+    padding: 5px;
+    height: 35px;
+    border-radius: 2px;
+    font-size: 2.5rem;  
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px; 
+    font-weight: bold; 
+}
+
+.searchForm svg:hover {
+    background-color: #c1272d;
+    color: #fff;
+}
+
+
+.AlignIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.IconLeft {
+    padding-left : 3px;
+}
+
+.IconRight {
+    padding-right : 3px;
+}

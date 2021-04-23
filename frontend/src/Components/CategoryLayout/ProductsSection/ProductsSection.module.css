@@ -1,0 +1,51 @@
+.ProductsSection {
+    display: block;
+    width: 75%;
+    margin-left: 1%;
+    border-radius: 4px;
+    padding: 13px 0 12px;
+    background-color: #fff;   
+    box-shadow: 0 1px 3px -1px rgb(0 0 0 / 40%);
+    padding: 10px;  
+    min-height: 70vh;
+}
+
+.ProductHeading {
+    font-size: 1.3rem;
+    border-bottom: 1px solid #eee;
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.LoadText {
+    display: inline-block;
+    color: #0f7c90;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 4px;
+    border: 1px dotted #0f7c90;
+}
+
+.LoadText:hover {
+    color: #fff;
+    background-color: #0f7c90;
+}
+
+@media only screen and (max-width: 678px) {
+    .ProductsSection {
+        width: 100%;
+        padding: 2px;
+        text-align: center;
+    }   
+}
+
+@media only screen and (max-width: 540px) {
+    .ProductsSection {
+        margin-top: 30px;
+    }   
+}

@@ -1,0 +1,10 @@
+.SideBarCategory {
+    padding: 10px;
+    border-bottom: 1px solid #dcdacb;
+}
+
+
+.SideBarCategory ul li{
+    list-style: none;
+    text-indent: 5px;
+}

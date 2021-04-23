@@ -1,0 +1,16 @@
+.UserIcon {
+    font-size: 5.5rem;
+    color: #555;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+    height: 135px;
+}
+
+.UserIcon svg {
+    border: 1px solid #555;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    padding: 15px;
+}

@@ -1,0 +1,79 @@
+.hamBurger {
+    display: none; 
+    height: 50px;
+    width: 50px;
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamBurger div{
+    background-color: #666;
+    height: 2.6px;
+    width: 80%;
+    transition: all 0.4s ease-in-out;   
+}
+
+.crossHamBurger div:first-child {
+    transform: rotate(-45deg) translate(-9px, 6px);    
+}
+
+.crossHamBurger div:nth-child(2) {
+    opacity: 0;
+}   
+
+.crossHamBurger div:last-child {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.crossHamBurger {
+    border: 2px solid #c1272d;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 915px) {
+    .hamBurger {
+        display: flex;
+        height: 40px;
+        width: 40px;
+    }
+
+    .crossHamBurger div:first-child {
+        transform: rotate(-45deg) translate(-3px, 7px);
+    }
+    
+    .crossHamBurger div:nth-child(2) {
+        opacity: 0;
+    }   
+    
+    .crossHamBurger div:last-child {
+        transform: rotate(45deg) translate(-2px, -8px);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+.hamBurger {
+    display: flex;
+    height: 40px;
+    width: 30px;
+}
+
+.crossHamBurger div:first-child {
+    transform: rotate(-45deg) translate(-3px, 7px);
+}
+
+.crossHamBurger div:nth-child(2) {
+    opacity: 0;
+}   
+
+.crossHamBurger div:last-child {
+    transform: rotate(45deg) translate(-2px, -8px);
+}
+}
+
+

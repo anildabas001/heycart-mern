@@ -1,0 +1,25 @@
+.NavigationBar {
+    width: 100%;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+
+.NavigationBar li {
+    list-style: none;
+}
+
+.NavigationBar li a {    
+    text-decoration: none;
+    color: #222;
+}
+
+.NavigationBar li a {    
+    text-decoration: none;
+    color: #222;
+}
+
+.NavigationBar li a:hover {    
+    font-weight: 400;
+    color: #0f7c90;
+}

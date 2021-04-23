@@ -1,0 +1,45 @@
+.AboutContent img {
+    float: right;
+    width: 240px;
+    max-height: 240px;
+    border-radius: 50%;
+}
+
+.AboutContent p {
+    width: 72%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1180px) {
+    .AboutContent p {
+        width: 60%;
+    } 
+}
+
+@media only screen and (max-width: 900px) {
+    .AboutContent p {
+        width: 50%;
+    } 
+
+    .AboutContent img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .AboutContent p {
+        width: 100%;
+        float: none;
+    } 
+
+    .AboutContent img {
+        width: 100%;
+        max-width:280px; 
+        height: 180px;
+        display: block;
+        margin: 5px auto;
+        float: none;
+    }
+}

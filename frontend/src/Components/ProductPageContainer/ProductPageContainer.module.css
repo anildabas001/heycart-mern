@@ -1,0 +1,26 @@
+.ProductPageContainer {
+    box-shadow: 0 2px 8px rgb(20 23 28 / 25%);
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    border: 1px solid #eee;
+    margin-top: 20px;
+    padding: 10px;
+    padding-top: 40px;
+    min-height: 73vh;
+}
+
+@media only screen and (max-width: 1300px) {
+    .ProductPageContainer {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .ProductPageContainer {
+        width: 98%;
+        padding-top: 20px;
+    }
+}
+
+

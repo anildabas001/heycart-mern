@@ -1,0 +1,41 @@
+
+.slick-prev:before {
+    color: black;
+}
+
+.slick-next:before {
+    color: black;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 2px;
+    right: 2px;
+    display: block;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+}
+
+.slick-track { 
+    margin: 0px 10px;
+}   
+
+@media only screen and (max-width: 890px) {
+    .slick-track { 
+        margin: 2px 2px;
+    }  
+}
+
+@media only screen and (max-width: 890px) {
+    .slick-track { 
+        margin: 0px 25px;
+    }  
+}
+
+@media only screen and (max-width: 720px) {
+    .slick-track { 
+        margin: 0px 2px;
+    }  
+}

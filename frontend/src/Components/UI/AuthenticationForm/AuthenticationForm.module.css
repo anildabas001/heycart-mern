@@ -1,0 +1,92 @@
+.AuthenticationForm {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.FormContainer {
+    width: 40%;
+    color: #222;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgb(20 23 28 / 25%);
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border: 1px solid #eee;
+    text-transform: capitalize;
+    text-align: center;    
+    font-weight: 300;
+}
+
+.FormContainer h2 {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #C1272D;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.AuthLink a:link,
+.AuthLink a:visited,
+.AuthLink a:active{
+    display: inline-block;
+    padding-top: 12px;
+    font-size: .8rem;
+    color: #0f7c90;
+    text-decoration: none;
+}
+
+.AuthLink a:hover {
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1293px) {
+    .FormContainer {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .FormContainer {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 865px) {
+    .FormContainer {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .FormContainer {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .FormContainer {
+        width: 85%;
+        padding: 5px;
+    }
+
+    .FormContainer h2 {
+        width: 1.3rem;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .FormContainer {
+        width: 95%;
+    }
+
+    .FormContainer h2 {
+        width: 1.3rem;
+        width: 60%;
+    }
+}

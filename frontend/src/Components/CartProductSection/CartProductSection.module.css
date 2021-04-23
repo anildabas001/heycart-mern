@@ -1,0 +1,19 @@
+.CartProductSection {
+    width: 65%;
+    margin-right: 3%;    
+    float: left;
+}
+
+.CartItemsBox {
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+@media only screen and (max-width: 830px) {
+    .CartProductSection {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;    
+        float: none;
+    }
+}
