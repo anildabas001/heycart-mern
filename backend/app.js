@@ -1,6 +1,5 @@
 const express =  require('express');
 const path = require('path');
-const cookieParser = require('cookie-Parser');
 require('dotenv').config({path: `${__dirname}/config.env`});
 const productRouter  = require('./Routes/ProductRouter');
 const categoryRouter  = require('./Routes/CategoryRouter');
@@ -14,6 +13,7 @@ const cors = require('cors');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const app = express();
+const cookieParser = require('cookie-Parser');
 
 app.use(xss());
 app.use(mongoSanitize());
